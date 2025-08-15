@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Remove default margins/paddings */
+    body {
+      margin: 0;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+        display: flex;
+        background: linear-gradient(to right, #192c64, #0dd5dfdc);
+        padding: 18px 45px;
+        box-shadow :0 8px 10px rgba(0,0,0,0.2);
+        justify-content: space-between;
+
+    }
+
+    /* Logo text on left */
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;;
+      color: #03fff2;
+
+    }
+    .nav-links {
+        display: flex ;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 6px;
+        text-decoration: none;
+        gap: 30px;
+    }
+.nav-links li a {
+    color :rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(101, 233, 240);
+    padding:3px 5px;
+    border-radius: 5px;
+    transition: background-color 0.ms ease;
+    align-items: right;
+}
+.nav-links li a:hover {
+    background-color: rgb(1, 1, 1);
+    color: rgb(247, 247, 247);
+    transition: background-color 0.3s ease;
+}
+.nav-links li a:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 1, 1);
+    transition: background-color 0.3s ease;}
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Healthnest</div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">All doctors</a></li>
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
